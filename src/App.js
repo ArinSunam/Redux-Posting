@@ -1,25 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import PostList from './features/posts/PostList'
+import AddPostForm from './features/posts/AddPostForm'
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='px-[40px] py-[20px] h-[100%]  bg-zinc-700 '>
+      <AddPostForm />
+      <PostList />
+
+
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
